@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name:  com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/Pokemon?useSSL=false
+    username:  root
+    password:  123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: pokemon
+server:
+  port: 1114
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
